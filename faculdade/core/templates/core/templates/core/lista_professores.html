@@ -1,0 +1,16 @@
+html
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>Professores</title>
+   </head>
+   <body>
+       <h1>Professores</h1>
+       <ul>
+           {% for professor in professores %}
+               <li>{{ professor.nome }}</li>
+           {% endfor %}
+       </ul>
+       <a href="{% url 'index' %}">Voltar</a>
+   </body>
+   </html>

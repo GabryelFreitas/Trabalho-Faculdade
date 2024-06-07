@@ -1,0 +1,16 @@
+html
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>Estudantes</title>
+   </head>
+   <body>
+       <h1>Estudantes</h1>
+       <ul>
+           {% for estudante in estudantes %}
+               <li>{{ estudante.nome }}</li>
+           {% endfor %}
+       </ul>
+       <a href="{% url 'index' %}">Voltar</a>
+   </body>
+   </html>
